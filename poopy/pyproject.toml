@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "function"
+version = "0.1.0"
+description = "A placeholder description."
+authors = ["OpenFaaS serverless user."]
+
+[tool.poetry.dependencies]
+# Put the dependencies here.
+python = "^3.9"
+# mangostar = "*"
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "derp"
+url = "https://gitlab.com/api/v4/projects/23354738/packages/pypi/simple"

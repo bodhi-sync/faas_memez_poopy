@@ -1,0 +1,16 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  poopy:
+    lang: python3-fastinit
+    handler: ./poopy
+    image: poopy:latest
+
+
+
+configuration: 
+  templates:
+    - name: python3-fastinit
+      source: https://gitlab.com/kivo360/python-fastapi-poetry-template.git
